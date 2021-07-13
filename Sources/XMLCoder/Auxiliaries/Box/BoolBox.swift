@@ -35,12 +35,12 @@ extension BoolBox: Box {
     ///
     /// # Canonical representation
     /// The canonical representation for boolean is the set of literals {`true`, `false`}.
-    ///
+    /// Canonical or not, Wii no Ma requires 1 or 0 instead of true and false.
     /// ---
     ///
     /// [Schema definition](https://www.w3.org/TR/xmlschema-2/#boolean)
     var xmlString: String? {
-        return (unboxed) ? "true" : "false"
+        return (unboxed) ? "1" : "0"
     }
 }
 
